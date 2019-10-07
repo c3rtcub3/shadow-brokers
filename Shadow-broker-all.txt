@@ -1,0 +1,91 @@
+# Links describing the leaked EQ Group tools for Windows
+
+## Repositories and ports
+
+* [Lost in Translation](https://github.com/x0rz/EQGRP_Lost_in_Translation) - A repository of the leaked tools
+
+* [MS17-010](https://github.com/worawit/MS17-010) - Port of some of the exploits to Windows 10
+
+## Installation and usage guides
+
+* [INSTALL.md](https://gist.github.com/thomhastings/4cddfc1d00c43e1b0b60bd6076c6c0a3) - Notes on how to install and use the tools
+
+* [Equation Group Dump Analysis and Full RCE on Win7 on MS17-010 with Cobalt Strike](https://www.trustedsec.com/blog/equation-group-dump-analysis-full-rce-win7-fully-patched-cobalt-strike/) - Notes on how to use EternalBlue and DoublePulsar
+
+* [Powershell Empire and FuzzBunch: exploitation of the sensational vulnerability ETERNALBLUE](https://steemit.com/eternalblue/@habra/powershell-empire-and-fuzzbunch-exploitation-of-the-sensational-vulnerability-eternalblue) - How to install PowerShell Empire and FuzzBunch under WINE on Linux and how to use the EternalBlue and DoublePulsar payloads from Empire
+
+* [HOW TO EXPLOIT ETERNALBLUE & DOUBLEPULSAR TO GET AN EMPIRE/METERPRETER SESSION ON WINDOWS 7/2008](https://www.exploit-db.com/docs/41896.pdf) (PDF) - How to install and set up FuzzBunch and how to use EternalBlue and DoublePulsar from it and from PowerShell Empire
+
+* [HOW TO EXPLOIT ETERNALROMANCE/SYNERGY TO GET A METERPRETER SESSION ON WINDOWS SERVER 2016](https://www.exploit-db.com/docs/42329.pdf) (PDF) - How to use the Metasploit modules for EternalRomance and EternalSynergy to get a Meterpreter session
+
+* [Data analysis of the Shadow Brokers leak](https://www.digitalsecurity.fr/en/blog/data-analysis-shadow-brokers-leak) - A general description of what the package of tools contains
+
+* [How to: Install Fuzzbunch & DanderSpritz?](http://pentestit.com/install-fuzzbunch-danderspritz/?PageSpeed=noscript) - How to install FuzzBunch and DanderSpritz
+
+* [A peek view in the Equation Group toolbox](https://www.digitalsecurity.fr/en/blog/peek-view-equation-group-toolbox) - How to use the tools from FuzzBunch and DanderSpritz frameworks
+
+## General analysis
+
+* [Analysis of the Shadow Brokers release and mitigation with Windows 10 virtualization-based security](https://blogs.technet.microsoft.com/mmpc/2017/06/16/analysis-of-the-shadow-brokers-release-and-mitigation-with-windows-10-virtualization-based-security/?platform=hootsuite) - Behavior of EtenralBlue and EternalRomance on Windows 10
+
+* [Hunting the hunter, finding bugs in NSA tools](http://blog.infobytesec.com/2017/06/hunting-hunter-finding-bugs-in-nsa-tools.html) - Description of some bugs in the tools
+
+## Analysis of EternalBlue and DoublePulsar
+
+* [Exploring the crypt: Analysis of the WannaCrypt ransomware SMB exploit propagation](https://blogs.technet.microsoft.com/mmpc/2017/06/30/exploring-the-crypt-analysis-of-the-wannacrypt-ransomware-smb-exploit-propagation/) - Use of EternalBlue and DoublePulsar in the WannaCry worm
+
+* [The Wannacry and NotPetya bug - CVE-2017-0144 SMB Remote Execution RCE](http://skelletronix.blogspot.bg/2017/07/the-wannacry-and-notpetya-bug-cve-2017.html) - Use of EternalBlue in the WannaCry and Petya worms
+
+* [ETERNALBLUE: Exploit Analysis and Port to Microsoft Windows 10](https://zerosum0x0.blogspot.bg/2017/06/eternalblue-exploit-analysis-and-port.html) - Port of EternalBlue to Windows 10
+
+* [Memory analysis of Eternalblue](http://markus.co/memory-forensics/2017/06/04/eternalblue-smb.html) - Another analysis of EternalBlue
+
+* [EternalBlue’s Large Non-Paged Pool Overflow in SRV Driver](http://blog.trendmicro.com/trendlabs-security-intelligence/ms17-010-eternalblue/) - Another analysis of EternalBlue
+
+* [Shadow Brokers: exploiting Eternalblue + Doublepulsar](https://www.securityartwork.es/2017/05/23/shadow-brokers-exploiting-eternalblue-doublepulsar/) - Analysis of EternalBlue and DoublePulsar
+
+* [DoublePulsar Initial SMB Backdoor Ring 0 Shellcode Analysis](https://zerosum0x0.blogspot.bg/2017/04/doublepulsar-initial-smb-backdoor-ring.html) - Analysis of the shellcode that installs the DoublePulsar backdoor
+
+* [EternalBlue – Everything there is to know](https://research.checkpoint.com/eternalblue-everything-know/) - A very complete explanation how exactly the EternalBlue exploit works
+
+* [EternalBlue: a prominent threat actor of 2017–2018](https://www.virusbulletin.com/virusbulletin/2018/06/eternalblue-prominent-threat-actor-20172018/) - Excellent description of how EternalBlue works, with short descriptions of some of the other tools and exploits (DoublePulsar, FuzzBunch, EternalRomance, EmeraldThread, ErraticGopher, EskimoRoll, EducatedScholar, EternalSynergy, EclipsedWing, EnglishmanDentist, EsteemAudit, ExplodingCan)
+
+* [Patching DoublePulsar to Exploit Windows Embedded Machines](https://capt-meelo.github.io/pentest/2018/06/26/patching-doublepulsar.html) - How to modify a single byte of the Metasploit implementation of DoublePulsar, in order to make it capable of infecting Windows Embedded machines
+
+## Analysis of the other tools in the package
+
+* [Eternalromance: Exploiting Windows Server 2003](http://www.hackingtutorials.org/exploit-tutorials/eternalromance-exploiting-windows-server-2003/) - Analysis of EternalRomance
+
+* [Eternal Champion Exploit Analysis](https://blogs.technet.microsoft.com/srd/2017/06/29/eternal-champion-exploit-analysis/) - Analysis of EternalChampion
+
+* [A Quick Analysis of Microsoft's ESTEEMAUDIT Patch](http://0patch.blogspot.bg/2017/06/a-quick-analysis-of-microsofts.html) - Analysis of EsteemAudit
+
+* [A Dissection of the “EsteemAudit” Windows Remote Desktop Exploit](http://researchcenter.paloaltonetworks.com/2017/05/unit42-dissection-esteemaudit-windows-remote-desktop-exploit/) - Another analysis of EsteemAudit
+
+* [A quick look at the NSA exploits & Dander Spiritz trojan](https://hackernoon.com/a-quick-look-at-the-nsa-exploits-dander-spiritz-trojan-1b5428b0ee65) - Analysis of DanderSpritz
+
+* [The Equation Group’s post-exploitation tools (DanderSpritz and more) Part 1](https://research.kudelskisecurity.com/2017/05/18/the-equation-groups-post-exploitation-tools-danderspritz-and-more-part-1/) - Another analysis of DanderSpritz
+
+* [EnglishmansDentist Exploit Analysis](https://blogs.technet.microsoft.com/srd/2017/07/20/englishmansdentist-exploit-analysis/) - Analysis of EnglishmanDentist
+
+* [Eternal Synergy Exploit Analysis](https://blogs.technet.microsoft.com/srd/2017/07/13/eternal-synergy-exploit-analysis/) - Analysis of EternalSynergy
+
+* [Analysis of the Shadowbrokers Envisoncollision Exploit](https://busy.org/security/@shadoweye/analysis-of-the-shadowbrokers-envisoncollision-exploit) - Analysis of the EnvisonCollision exploit
+
+* [ExplodingCan](https://github.com/danigargu/explodingcan) - Python implementation of the ExplodingCan exploit
+
+* [DanderSpritz/PeddleCheap Traffic Analysis](https://www.forcepoint.com/sites/default/files/resources/files/datasheet_security_labs_dander_spritz_peddle_cheap_traffic_analysis_en.pdf) (PDF file) - Analysis of the network traffic between PeddleCheap and DanderSpritz.
+
+* [Dissecting a Bug in the EternalRomance Client](https://zerosum0x0.blogspot.com/2018/06/dissecting-bug-in-eternalromance-client.html) - Description of a bug in the implementation of the EternalRomance exploit
+
+* [Nsa Shadowbrokers leak: analyzing EPICHERO](https://ezequieltbh.me/posts/2017/05/nsa-shadowbrokers-leak-analyzing-epichero/) - Analysis of the EpicHero exploit
+
+## Other tools
+
+* [danderspritz-evtx](https://github.com/fox-it/danderspritz-evtx) - Script for recovering the log file entries deleted by the DaderSpritz tool.
+
+* [DanderSpritz_lab](https://github.com/francisck/DanderSpritz_lab) - How to set up fully functional DanderSpritz lab for research and experimentation purposes.
+
+* [Territorial Dispute –  NSA’s perspective on APT landscape](https://blog.crysys.hu/2018/03/territorial-dispute-nsas-perspective-on-apt-landscape/) - Description of TerritorialDispute - the database used to detect various competing APT tools.
+
+* [How The Equation Group Remained Out Of Sight Over The Years](https://www.youtube.com/watch?v=5ytIbdAl4x4) (video) - A lecture, describing how the KillSuit framework works.
